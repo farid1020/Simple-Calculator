@@ -21,3 +21,25 @@ function doCalculation(equation){
 function checkNumOperators(eq){
     return 2;
 }
+
+function sum(fstNum, sndNum){
+    return fstNum+sndNum;
+}
+
+function subtract(thisNum, fromThisNum){
+    return fromThisNum - thisNum; 
+}
+
+function multiply (numArray){
+    let result = 1;
+    if(Array.isArray(numArray)){
+        if(numArray.length > 1){
+            let i;
+            for(i = 0; i < numArray.length; i++){
+                result = numArray[i] * result;
+            }
+            return result;
+        }   
+    } 
+    return result;
+}
