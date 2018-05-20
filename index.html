@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+</head>
+<body>
+    <div id="tablecontainer">
+        <div>
+            <div id="outputarea"></div>
+        </div>
+        <div id="toprow">
+            <table class="table1">
+                <tr class="tablerow">
+                    <td>y<sup>x</sup></td>
+                    <td>y<sub>x</sub></td>
+                    <td onclick="btnclick('!')">!</td>
+                </tr>
+            </table>
+            <table class="table2">
+                <tr class="tablerow"><td onclick="clearAll()">CA</td></tr>
+            </table>
+        </div>
+        <div id="bottomrow">
+            <table class="table1">
+                <tr class="tablerow">
+                    <td onclick="btnclick(7)">7</td><td onclick="btnclick(8)">8</td><td onclick="btnclick(9)">9</td>
+                </tr>
+                <tr class="tablerow">
+                    <td onclick="btnclick(4)">4</td><td onclick="btnclick(5)">5</td><td onclick="btnclick(6)">6</td>
+                </tr>
+                <tr class="tablerow">
+                    <td onclick="btnclick(1)">1</td><td onclick="btnclick(2)">2</td><td onclick="btnclick(3)">3</td>
+                </tr>
+                <tr class="tablerow">
+                    <td onclick="btnclick('.')">.</td><td onclick="btnclick(0)">0</td><td onclick="calculate()">=</td>
+                </tr>
+            </table>
+            <table class="table2">
+                <tr class="tablerow"><td onclick="btnclick('/')">/</td></tr>
+                <tr class="tablerow"><td onclick="btnclick('*')">*</td></tr>
+                <tr class="tablerow"><td onclick="btnclick('-')">-</td></tr>
+                <tr class="tablerow"><td onclick="btnclick('+')">+</td></tr>
+            </table>
+        </div>
+    </div>    
+</body>
+</html>
